@@ -187,8 +187,8 @@ namespace SheetsQuickstart
                     Console.Error.WriteLine($"Exception: {ex}\n\n");
                 }
             }
-            Console.WriteLine("Roster Records imported. Press Any Key To Continue...");
             conn.Close();
+            Console.WriteLine("Roster Records imported. Press ENTER Key To Continue...");            
             Console.Read();
         }
         
