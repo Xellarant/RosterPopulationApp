@@ -50,7 +50,7 @@ namespace SheetsQuickstart
 
             // Define request parameters.
             String spreadsheetId = "1hobYZgYiONQ4CiwkIdOk_ZFXaqwIguYF2294ChTWIVU";
-            String range = "PY44 ACTIVE!A4:V";
+            String range = "PY45 ACTIVE!A4:V";
             SpreadsheetsResource.ValuesResource.GetRequest request =
                     service.Spreadsheets.Values.Get(spreadsheetId, range);
 
@@ -64,6 +64,8 @@ namespace SheetsQuickstart
 
         private static void FillRosterTable()
         {
+            const int PYStartNumber = 1;
+            const int PY_ID_CONST = 45;
             if (values != null && values.Count > 0)
             {
                 Console.WriteLine("PY RosterID, LastName, FirstName");
@@ -76,7 +78,8 @@ namespace SheetsQuickstart
                         //CustomerRoster tempCust = new CustomerRoster();
                         if (Int32.TryParse(row[1].ToString(), out int tempRecordID))
                         {
-                            //tempCust.RosterID = tempInt;
+                            if (tempRecordID < PYStartNumber)
+                                continue;
                         }
                         else
                         {
@@ -158,7 +161,8 @@ namespace SheetsQuickstart
                             YouthSchool = row.Count > 16 ? (string)row[16] : null,
                             Notes = row.Count > 19 ? (string)row[17] + row[18] + row[19] : null,
                             PhoneNumber = row.Count > 20 ? (string)row[20] : null,
-                            Email = row.Count > 21 ? (string)row[21] : null
+                            Email = row.Count > 21 ? (string)row[21] : null,
+                            PY_ID = PY_ID_CONST
                         });
                     }
                 }
