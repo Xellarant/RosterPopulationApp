@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosterPopulation", "RosterPopulation\RosterPopulation.csproj", "{3A628A35-9107-4A56-8B7B-F26A1D411325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccess", "..\DatabaseAccess\DatabaseAccess\DatabaseAccess.csproj", "{F65F3AB2-1986-4BCA-AEEB-B33326338F0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A628A35-9107-4A56-8B7B-F26A1D411325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A628A35-9107-4A56-8B7B-F26A1D411325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A628A35-9107-4A56-8B7B-F26A1D411325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A628A35-9107-4A56-8B7B-F26A1D411325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65F3AB2-1986-4BCA-AEEB-B33326338F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65F3AB2-1986-4BCA-AEEB-B33326338F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65F3AB2-1986-4BCA-AEEB-B33326338F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65F3AB2-1986-4BCA-AEEB-B33326338F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F56687B-FA30-4F5F-8DE0-46610B939262}
+	EndGlobalSection
+EndGlobal
